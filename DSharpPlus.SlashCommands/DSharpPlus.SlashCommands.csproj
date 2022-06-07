@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net5.0</TargetFramework>
+        <TargetFramework>net6.0</TargetFramework>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageId>Kuylar.DSharpPlus.SlashCommands</PackageId>
         <Title>Kuylar.DSharpPlus.SlashCommands</Title>
@@ -16,8 +16,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="DSharpPlus" Version="4.3.0-nightly-01135" />
-        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.2" />
+        <PackageReference Include="DSharpPlus" Version="4.3.0-nightly-01141" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0-preview.4.22229.4" />
     </ItemGroup>
 
 </Project>

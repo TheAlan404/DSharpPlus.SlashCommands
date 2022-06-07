@@ -255,7 +255,6 @@ namespace DSharpPlus.SlashCommands
 
 				ApplicationCommandBuilder command = new ApplicationCommandBuilder(attr.Type)
 					.WithName(attr.Name)
-					.WithDefaultPermission(attr.DefaultPermission)
 					.WithDefaultPermissions(attr.DefaultPermissions)
 					.WithMethod(method);
 
@@ -290,7 +289,6 @@ namespace DSharpPlus.SlashCommands
 					.WithName(attr.Name)
 					.WithDescription(attr.Description)
 					.WithMethod(method)
-					.WithDefaultPermission(attr.DefaultPermission)
 					.WithDefaultPermissions(attr.DefaultPermissions)
 					.WithGuildOnly(attr.GuildOnly);
 

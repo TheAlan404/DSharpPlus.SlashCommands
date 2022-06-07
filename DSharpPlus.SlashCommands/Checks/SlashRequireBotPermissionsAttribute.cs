@@ -30,11 +30,12 @@ namespace DSharpPlus.SlashCommands.Attributes
             this.IgnoreDms = ignoreDms;
         }
 
-        /// <summary>
-        /// Runs checks.
-        /// </summary>
-        public override async Task<bool> ExecuteChecksAsync(BaseContext ctx)
-        {
+		/// <summary>
+		/// Runs checks.
+		/// </summary>
+#pragma warning disable CS1998 // Async method lacks 'await' operators and will run synchronously
+		public override async Task<bool> ExecuteChecksAsync(BaseContext ctx)
+		{
             if (ctx.Guild == null)
                 return this.IgnoreDms;
 
@@ -52,5 +53,6 @@ namespace DSharpPlus.SlashCommands.Attributes
 
             return (pbot & this.Permissions) == this.Permissions;
         }
-    }
+#pragma warning restore CS1998 // Async method lacks 'await' operators and will run synchronously
+	}
 }
